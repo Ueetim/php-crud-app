@@ -17,8 +17,6 @@ mysqli_free_result($result);
 // close db connection
 mysqli_close($conn);
 
-//explode(',', $pizzas[0]['ingredients']);
-
 ?>
 
 <!DOCTYPE html>
