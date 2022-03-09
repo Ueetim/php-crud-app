@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+:root {
+    --primary: brown;
+    --padding: 0 30px;
+    --light: white;
+    --margin: 80px 0;
+    --shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+body {
+    font-family: Poppins;
+    width: 100vw;
+    background-color: #f2f2f2;
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    background-color: var(--primary);
+    color: var(--light);
+    border-radius: 3px;
+    border: 1px solid brown;
+    padding: 5px 30px;
+}
+
+.btn:hover{
+    background-color: rgb(119, 7, 7);
+}
+
+/* navigation bar */
+
+.nav {
+    background-color: var(--light);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: var(--padding);
+    position: sticky;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    top: 0;
+    width: 100%;
+}
+
+.logo {
+    color: var(--primary);
+    font-size: 23px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* footer */
+footer {
+    background-color: var(--primary);
+    padding: 20px 0;;
+}
+
+footer p {
+    text-align: center;
+    color: var(--light);
+}
+
+/* ADD PAGE */
+
+.add-form {
+    padding: 10px;
+    margin: var(--margin);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.add-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--primary);
+}
+
+.add-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    box-shadow: var(--shadow);
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    max-width: 80%;
+}
+
+.add-form input {
+    border: none;
+    border-bottom: 1px solid rgb(107, 107, 107);
+    padding: 10px 0;
+    font-family: Poppins;
+    outline: none;
+}
+
+.add-form input[type=submit] {
+    border: none;
+    background-color: var(--primary);
+    color: var(--light);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-form input[type=submit]:hover {
+    background-color: rgb(119, 7, 7);
+}
+
+/* ADD PAGE ENDS */
+
+/* HOME PAGE */
+
+.home-info {
+    padding: 60px;
+}
+
+.home-info > h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+    line-height: 40px;
+    padding: 20px;
+}
+
+.pizza {
+    background-color: var(--light);
+    box-shadow: var(--shadow);
+    border-radius: 7px;
+    text-align: center;
+    padding: 30px;
+}
+
+.card-btn a {
+    color: var(--primary);
+    font-size: 14px;
+}
+
+.pizza-img {
+    height: 70px;
+}
+
+/* HOME PAGE ENDS */
+
+/* DETAILS PAGE */
+
+.pizza-info {
+    text-align: center;
+    margin: 80px 30px;
+    line-height: 30px;
+}
+
+.pizza-info p {
+    font-size: 14px;
+}
+
+/* DETAILS PAGE ENDS */
